@@ -1,7 +1,13 @@
-import pyautogui
-import time
-from PIL import ImageGrab
-from functools import partial
+try:
+    import pyautogui
+    import time
+    from PIL import ImageGrab
+    from functools import partial
+except ModuleNotFoundError:
+  print("[Missing Packages]: Please ensure you have installed everything in the requirements.txt file")
+  input()
+
+
 ImageGrab.grab = partial(ImageGrab.grab, all_screens=True)
 
 with open("config.txt", "r") as file:
@@ -14,7 +20,6 @@ with open("config.txt", "r") as file:
 print(version)
 while True:
     if pyautogui.locateOnScreen(f"versions\{version}.png", grayscale=True, confidence=conf) != None:
-        print("working")
         pyautogui.click(button='right')
         time.sleep(0.5)
         pyautogui.click(button='right')

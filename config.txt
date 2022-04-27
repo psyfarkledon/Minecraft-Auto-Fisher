@@ -1,5 +1,5 @@
 Confidence
-0.3
+0.5
 
 Minecraft Version
 1.18
