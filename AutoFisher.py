@@ -19,8 +19,9 @@ with open("config.txt", "r") as file:
 
 print(version)
 while True:
-    if pyautogui.locateOnScreen(f"versions\{version}.png", grayscale=True, confidence=conf) != None:
+    if pyautogui.locateOnScreen(f"versions\{version}.png", grayscale=True, confidence=0.4) != None:
         pyautogui.click(button='right')
+        print("Reeling Her In")
         time.sleep(0.5)
         pyautogui.click(button='right')
         time.sleep(6)
