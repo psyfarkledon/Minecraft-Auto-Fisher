@@ -1,0 +1,6 @@
+Confidence
+0.3
+
+Minecraft Version
+1.18
+

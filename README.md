@@ -14,6 +14,19 @@ https://www.python.org/downloads/
 
 6. Turn on Subtitles in your Minecraft game
 
-7. Run AutoFisher.py
+7. Put your version in the config file
+
+8. Run AutoFisher.py
+
+If the program does not seem to work go into the versions folder and take note of the cropped images. Go back into minecraft and screenshot right as the subtitle indicates you've caught something. Crop the screenshot down like in the examples and save it to the versions folder. Go into the configuration folder and change the version number to whatever you name that cropped screenshot.
+
+SUPPORTED VERSIONS:
+1.18
+1.12
+
+Credit to 0xTas https://github.com/0xTas
+
+
+
 
 

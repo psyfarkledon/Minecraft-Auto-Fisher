@@ -1,11 +1,21 @@
 import pyautogui
 import time
+from PIL import ImageGrab
+from functools import partial
+ImageGrab.grab = partial(ImageGrab.grab, all_screens=True)
+
+with open("config.txt", "r") as file:
+    conf = float(file.readlines()[1].strip())
+
+with open("config.txt", "r") as file:
+    version = file.readlines()[4].strip()
+    
+
+print(version)
 while True:
-    if pyautogui.locateOnScreen("image.png", grayscale=True, confidence=0.5) != None:
+    if pyautogui.locateOnScreen(f"versions\{version}.png", grayscale=True, confidence=conf) != None:
+        print("working")
         pyautogui.click(button='right')
         time.sleep(0.5)
         pyautogui.click(button='right')
         time.sleep(6)
-
-
-
