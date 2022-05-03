@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import subprocess
 import time
 
@@ -11,17 +10,6 @@ except ModuleNotFoundError:
     import pyautogui
     from PIL import ImageGrab
     from functools import partial
-=======
-try:
-    import pyautogui
-    import time
-    from PIL import ImageGrab
-    from functools import partial
-except ModuleNotFoundError:
-  print("[Missing Packages]: Please ensure you have installed everything in the requirements.txt file")
-  input()
->>>>>>> 63d989fd83596901b3e16393829cdf3ff39736f9
-
 
 ImageGrab.grab = partial(ImageGrab.grab, all_screens=True)
 
