@@ -2,6 +2,6 @@ Confidence
 0.5
 
 Minecraft Version
-1.18
+1.19
 
 !!!DO NOT PUT CONFIDENCE LOWER THAN 4.0!!!

@@ -18,7 +18,8 @@ with open("config.txt", "r") as file:
 
 with open("config.txt", "r") as file:
     version = file.readlines()[4].strip()
-    
+
+inv_slot = 1
 
 print("Program is running")
 print(f"Version {version}")
@@ -27,6 +28,13 @@ while True:
     if pyautogui.locateOnScreen(f"versions\{version}.png", grayscale=True, confidence=conf) != None:
         pyautogui.click(button='right')
         print("Reeling Her In")
+
+        if inv_slot == 9:
+            inv_slot = 1
+        else:
+            inv_slot += 1
+
+        pyautogui.press(f'{inv_slot}')
         time.sleep(0.5)
         pyautogui.click(button='right')
         time.sleep(6)
