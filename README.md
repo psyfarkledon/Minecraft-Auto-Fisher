@@ -7,4 +7,6 @@ Python Program that will automatically fish in Minecraft
 
 If it says "pip is not a recognized command" you likely have to add it to your environment variables path
 
-4. run autofisher.py and begin fishing in minecraft
+4. fill inventory slots 1-10 with fishing rods
+5. run autofisher.py and begin fishing in minecraft
+
