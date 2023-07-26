@@ -6,7 +6,7 @@ Python Program that will automatically fish in Minecraft
 3. type command: "pip --version" without quotes to verify your version of pip. 
 
 If it says "pip is not a recognized command" you likely have to add it to your environment variables path
-
-4. fill inventory slots 1-10 with fishing rods
-5. run autofisher.py and begin fishing in minecraft
+4. Turn subtitles on in minecraft
+5. fill inventory slots 1-10 with fishing rods
+6. run autofisher.py and begin fishing in minecraft
 
